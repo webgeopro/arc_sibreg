@@ -1,0 +1,9 @@
+User-agent: *
+Allow: 
+Disallow: *
+Host: sibreg.org
+Sitemap: http://sibreg.org/sitemap.xml
+
+User-agent: Yandex
+Allow: 
+Disallow: *

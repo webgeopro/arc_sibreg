@@ -1,0 +1,19 @@
+allow from all
+
+php_flag display_startup_errors on
+php_flag display_errors on
+php_flag html_errors on
+
+DirectoryIndex index.php
+
+RewriteEngine on
+
+#RewriteRule !\.(js|ico|gif|jpg|png|css|htm|mp3|wav|html|swf)$ index.php
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+RewriteRule . index.php
+
